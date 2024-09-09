@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+
+nav {
+    display: flex;
+    flex-direction: initial;
+    position: fixed;
+    background:#ffffff8e;
+    width:100vw;
+    box-shadow:-10px 5px 10px rgba(0, 0, 0, 0.308);
+    z-index: 1000;
+    border-radius: 0 0 50px 50px;
+
+}
+
+nav ul {
+ margin-left: 100px;
+ display: flex;
+
+}
+
+
+nav,
+ul li {
+    display: inline;
+    padding: 8px;
+    float: right;
+    list-style: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    font-weight: 800;
+
+}
+
+nav a:hover {
+    color:#4d4d4d;
+    font-weight: 800;
+}
+
+main {
+
+}
+
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://www.nintendo.com/eu/media/images/10_share_images/portals_3/2x1_SuperMarioHub_image1600w.jpg");
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+#home img {
+    width: 405px;
+    float: right;
+    margin-top:400px;
+    margin-right: 50px;
+    z-index: 2;
+}
+
+
+@keyframes animation-up-down {
+    0%, 100% {
+        transform: rotate(-25deg);
+    }
+    75% {
+        transform: translateY(280px);
+
+
+    }
+
+    
+  }
+
+  #home img{
+    animation-name: animation-up-down;
+    animation-duration: 4s; 
+    animation-iteration-count:infinite;
+    animation-direction: alternate; 
+    animation-timing-function: ease-out; 
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+   }
+
+#sobre {
+    background-image: url("../img/super-mario-world-snes.gif");
+    background-size:cover;
+    background-position: bottom;
+    height: 100vh;
+    box-shadow: 20px 20px 50px rgba(13, 23, 31, 0.904);
+    filter: brightness(70%);
+}
+
+.about {
+    background:rgba(68, 70, 69, 0.671);
+    height: 100vh;
+
+}
+
+#sobre p {
+    color:#fff;
+    position:relative;
+    top:540px;
+    padding:30px;
+    margin:0 10px;
+    border-radius:20px;
+    background:rgba(68, 70, 69, 0.671);
+
+}
+
+#galeria {
+    background-image: url("../img/stars.gif");
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    box-shadow: 20px -00px 50px rgb(13, 23, 31);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#galeria img {
+    width:300px;
+    margin:70px;
+    box-shadow: -5px 5px 30px rgb(13, 23, 31);
+
+}
+
+#galeria img:hover {
+    cursor: pointer;
+    box-shadow: -5px 5px 30px rgb(253, 253, 253);
+
+    transition: 0.3s ease-in-out;
+    transform: scale(1.2);
+    transform:rotate(-10deg);
+
+
+
+}
+
+
